@@ -12,11 +12,6 @@ body {
     background-attachment: fixed;
 }
 
-.Navbar {
-    margin-top: 2%;
-    backdrop-filter: blur(10px);
-}
-
 .NavlinkContainer {
     position: absolute;
     right: 0;
@@ -39,16 +34,61 @@ body {
     border-bottom: 3px solid white;
 }
 
-.page {
-    color: white;
-}
-
-.container {
-    border: 2px solid red;
-    height: 80vh;
+.HomePage {
+    margin-top: 10%;
 }
 
 .explore {
-    border: 2px solid red;
     background-color: white;
+    height: max-content;
+    padding: 70px 25px;
+    border-radius: 50%;
+    font-size: 3em;
+    font-family: 'Cormorant SC', serif;
+}
+
+.HP-L1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 2.7em;
+}
+
+.HP-L2 {
+    font-size: 7em;
+    font-family: 'Lora', serif;
+    font-weight: lighter;
+}
+
+.HP-L3 {
+    font-size: 1.2em;
+}
+
+#side_nav {
+    height: 100vh;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.836);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    overflow-x: hidden;
+    transition: 0.5s;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width:786px) {
+    .HP-L1 {
+        letter-spacing: 2px;
+        font-size: 1.7em;
+    }
+    .HP-L2 {
+        font-size: 5.1em;
+    }
+    body {
+        background-image: url('../public/assets/home/background-home-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }
