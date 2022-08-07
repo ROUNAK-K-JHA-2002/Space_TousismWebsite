@@ -21,7 +21,7 @@ const Navbar = () => {
        <div onClick={CloseNavbar} className="openNavIcon text-white d-inline-block position-absolute m-1 pr-5" style={IconStyle} ><i class="fa fa-close" aria-hidden="true"></i> </div>
    
         <NavLink onClick={CloseNavbar} className={({isActive})=> (isActive? "Navlinks NavActive px-2 pb-4 pt-5 mx-3 mt-5" : "Navlinks px-2 pb-4 pt-5 mx-3 mt-5")} to={'/'}> 00 Home</NavLink>
-          <NavLink onClick={CloseNavbar} className={({isActive})=> (isActive? "Navlinks NavActive px-2 py-4 mx-3 " : "Navlinks px-2 py-4 mx-3 ")} to={'/destinations'}> 01 Destinations</NavLink>
+          <NavLink onClick={CloseNavbar} className={({isActive})=> (isActive? "Navlinks NavActive px-2 py-4 mx-3 " : "Navlinks px-2 py-4 mx-3 ")} to={'/destinations/Moon'}> 01 Destinations</NavLink>
           <NavLink onClick={CloseNavbar} className={({isActive})=> (isActive? "Navlinks NavActive px-2 py-4 mx-3 " : "Navlinks px-2 py-4 mx-3 ")} to={'/crews'}> 02 Crews</NavLink>
           <NavLink onClick={CloseNavbar} className={({isActive})=> (isActive? "Navlinks NavActive px-2 py-4 mx-3 " : "Navlinks px-2 py-4 mx-3 ")} to={'/technology'}> 03 Technology</NavLink>
     
@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
         <div className="NavlinkContainer my-4 mx-5 pr-3 d-inline-block ">
           <NavLink className={({isActive})=> (isActive? "Navlinks NavActive px-2 py-4 mx-3" : "Navlinks px-2 py-4 mx-3")} to={'/'}> 00 Home</NavLink>
-          <NavLink className={({isActive})=> (isActive? "Navlinks NavActive px-2 py-4 mx-3" : "Navlinks px-2 py-4 mx-3")} to={'/destinations'}> 01 Destinations</NavLink>
+          <NavLink className={({isActive})=> (isActive? "Navlinks NavActive px-2 py-4 mx-3" : "Navlinks px-2 py-4 mx-3")} to={'/destinations/moon'}> 01 Destinations</NavLink>
           <NavLink className={({isActive})=> (isActive? "Navlinks NavActive px-2 py-4 mx-3" : "Navlinks px-2 py-4 mx-3")} to={'/crews'}> 02 Crews</NavLink>
           <NavLink className={({isActive})=> (isActive? "Navlinks NavActive px-2 py-4 mx-3" : "Navlinks px-2 py-4 mx-3")} to={'/technology'}> 03 Technology</NavLink>
         </div>
